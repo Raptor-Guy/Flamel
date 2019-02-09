@@ -1,0 +1,27 @@
+package com.arpansBetter.hackTheRam;
+
+import java.awt.Color;
+import java.awt.DisplayMode;
+
+import javax.swing.JFrame;
+
+public class Main implements Runnable {
+	
+	public static void main(String[] args) {
+		
+		DisplayMode dm = new DisplayMode(640, 480, 16, DisplayMode.REFRESH_RATE_UNKNOWN);
+		Main mn = new Main();
+		mn.run(dm);
+		
+		Window window = new Window();
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(640, 480);
+		window.setVisible(true);
+		
+	}
+	
+	public void run(DisplayMode dm) {
+		setBackground(Color.getHSBColor(50, 10, 255));
+		setForeground(Color.WHITE);
+	}
+}

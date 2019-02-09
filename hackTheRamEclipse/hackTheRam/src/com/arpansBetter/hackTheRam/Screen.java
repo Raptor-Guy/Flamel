@@ -3,7 +3,7 @@ package com.arpansBetter.hackTheRam;
 import java.awt.*;
 import javax.swing.JFrame;
 
-public class Screen {
+public class Screen extends JFrame {
 	private GraphicsDevice vc;
 	
 	public Screen() {
@@ -25,12 +25,12 @@ public class Screen {
 		}
 	}
 	
-	public Window getFullScreenWindow() {
+	public java.awt.Window getFullScreenWindow() {
 		return vc.getFullScreenWindow();
 	}
 	
 	public void restoreScreen() {
-		Window w = vc.getFullScreenWindow();
+		java.awt.Window w = vc.getFullScreenWindow();
 		if (w != null) {
 			w.dispose();
 		}

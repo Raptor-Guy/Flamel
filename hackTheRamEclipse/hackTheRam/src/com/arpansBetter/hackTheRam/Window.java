@@ -11,15 +11,8 @@ import javax.swing.JOptionPane;
 
 public class Window extends JFrame {
 	static String title = "Window";
-	static String mainText = "TEXT.........";
-	
-	private JLabel item1;
 	
 	public Window() {
 		super(title);
-		setLayout(new FlowLayout());
-		item1 = new JLabel(mainText);
-		item1.setToolTipText("That's some text.");
-		add(item1);
 	}
 }

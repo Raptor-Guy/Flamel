@@ -1,0 +1,19 @@
+package com.arpansBetter.hackTheRam;
+
+import java.awt.DisplayMode;
+
+import javax.swing.JFrame;
+
+public class Main implements Runnable {
+	
+	public static void main(String[] args) {
+		
+		DisplayMode dm = new DisplayMode(640, 480, 16, DisplayMode.REFRESH_RATE_UNKNOWN);
+		
+		Window window = new Window();
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(640, 480);
+		window.setVisible(true);
+		
+	}
+}
