@@ -1,0 +1,17 @@
+package com.arpansBetter.hackTheRam;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		String fn = JOptionPane.showInputDialog("ENTERERERERERE:");
+		String sn = JOptionPane.showInputDialog("ENTERERERERERE2:");
+		
+		int num1 = Integer.parseInt(fn);
+		int num2 = Integer.parseInt(sn);
+		
+	}
+	
+}

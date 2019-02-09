@@ -1,0 +1,13 @@
+package com.arpansBetter.hackTheRam;
+
+public class ASDF {
+	public static void main(String[] args) {
+		Thread thread0 = new Thread(new Main("num1"));
+		Thread thread1 = new Thread(new Main("num2"));
+		Thread thread2 = new Thread(new Main("num3"));
+		
+		thread0.start();
+		thread1.start();
+		thread3.start();
+	}
+}

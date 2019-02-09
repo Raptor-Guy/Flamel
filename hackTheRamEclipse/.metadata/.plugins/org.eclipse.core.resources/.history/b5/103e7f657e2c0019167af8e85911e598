@@ -1,0 +1,25 @@
+package com.arpansBetter.hackTheRam;
+
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Main extends JFrame {
+	
+	private JLabel item1;
+	
+	public Main() {
+		super("Window");
+		setLayout(new FlowLayout());
+		item1 = new JLabel("TEXT...");
+		item1.setToolTipText("That's some text.");
+		add(item1);
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

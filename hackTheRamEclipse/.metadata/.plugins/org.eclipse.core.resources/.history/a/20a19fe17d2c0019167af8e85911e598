@@ -1,0 +1,22 @@
+package com.arpansBetter.hackTheRam;
+
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Main extends JFrame {
+	
+	private JLabel item1;
+	
+	public Main() {
+		super("Window");
+		setLayout(new FlowLayout);
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}
